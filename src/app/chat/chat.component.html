@@ -1,0 +1,11 @@
+<div class="container">
+  <form>
+    <div class="chat-container">
+      <div *ngFor="let message of chats" class="chat-message">{{message}}<hr></div>
+    </div>
+    <div class="input-container">
+      <input #chatMessage />
+      <button type="button" (click)="addChatMessage(chatMessage.value)">Send</button>
+    </div>
+  </form>
+</div>
