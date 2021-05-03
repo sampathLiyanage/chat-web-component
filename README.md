@@ -1,27 +1,21 @@
 # ArithmixChat
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
-
 ## Development server
 
+npm install -g @angular/cli
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Change the values in `styles.scss` to change the theme
+Run `npm run build:component` to build the project. A file named `arithmixchat.js` will be stored in the `output/` directory.
 
-## Running unit tests
+## Embedding in web pages
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Include the file `arithmixchat.js` in the header section of the web page `<script type="text/javascript" src="path to arithmixchat.js" />`
+Add the following html as an immediate child of the body tag. `<arithmix-chat></arithmix-chat>`
 
-## Running end-to-end tests
+## Notes
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This is an Angular application and the development can be done similar to any other angular implementation
+Don't use UI libraries for components and use css from scratch. This is to avoid the component CSS conflicting with the host and to keep the component light weight (ie. to reduce the component size and to improve performance)
