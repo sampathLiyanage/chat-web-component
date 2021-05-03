@@ -18,8 +18,12 @@ Include the file `arithmixchat.js` in the header section of the web page `<scrip
 
 Add the following html as an immediate child of the body tag. `<arithmix-chat></arithmix-chat>`
 
-## Notes
+## Notes for dev
 
 This is an Angular application and the development can be done similar to any other angular implementation
 
+Responsivenes should be preserved using media queries
+
 Don't use UI libraries for components and use css from scratch. This is to avoid the component CSS conflicting with the host and to keep the component light weight (ie. to reduce the component size and to improve performance)
+
+This component should be tested with different browsers before sending to the production
